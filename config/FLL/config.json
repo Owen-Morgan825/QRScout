@@ -84,12 +84,10 @@
           "required": true
         },
         {
-          "code": "tsc",
-          "title": "Speaker Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
+          "code": "touchingHabitat",
+          "title": "Touching Habitat?",
+          "type": "boolean",
+          "required": true
         },
         {
           "code": "tfs",
@@ -98,40 +96,17 @@
           "defaultValue": 0,
           "min": 0,
           "required": false
-        },
-        {
-          "code": "cn",
-          "title": "Note in Trap?",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "Fou/Tech",
-          "title": "Teleop Foul",
-          "type": "counter",
-          "defaultValue": 0,
-          "required": false
         }
       ]
     },
     {
-      "name": "Endgame",
+      "name": "Mission 03: Coral Reef",
       "fields": [
         {
-          "title": "End Position",
-          "type": "select",
+          "title": "Flipped Up?",
+          "type": "boolean",
           "required": true,
-          "code": "epo",
-          "choices": {
-            "No": "No Climb",
-            "P": "Parked",
-            "Os": "Onstage",
-            "Hm": "Harmony",
-            "Fh": "Failed Harmony"
-          },
-          "defaultValue": "No"
+          "code": "coral-flipped"
         }
       ]
     },
