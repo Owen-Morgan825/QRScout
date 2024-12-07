@@ -11,11 +11,7 @@ export interface QRModalProps {
 }
 
 export function getQRCodeData(formData: Config): string {
-  return formData.sections
-    .map(s => s.fields)
-    .flat()
-    .map(v => `${v.value}`.replace(/\n/g, ' '))
-    .join(formData.delimiter);
+  return JSON.stringify(formData.sections);
 }
 
 export function QRModal(props: QRModalProps) {
