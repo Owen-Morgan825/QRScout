@@ -9,10 +9,10 @@
       "preserveDataOnReset": true,
       "fields": [
         {
-          "title": "Scouter Initials",
+          "title": "Referee Name",
           "type": "text",
           "required": true,
-          "code": "scouter"
+          "code": "referee"
         },
         {
           "title": "Match Number",
@@ -23,37 +23,24 @@
           "autoIncrementOnReset": true
         },
         {
-          "title": "Robot",
-          "type": "select",
+          "title": "Team Initals",
+          "type": "text",
           "required": true,
-          "code": "robot",
-          "choices": {
-            "R1": "Red 1",
-            "R2": "Red 2",
-            "R3": "Red 3",
-            "B1": "Blue 1",
-            "B2": "Blue 2",
-            "B3": "Blue 3"
-          },
-          "defaultValue": "R1"
+          "code": "team"
         },
         {
           "title": "Team Number",
           "type": "number",
           "required": true,
           "code": "teamNumber"
+          "autoIncrementOnReset": false
         },
         {
-          "title": "Starting Position",
-          "type": "select",
+          "title": "Team Number",
+          "type": "number",
           "required": true,
-          "code": "Prsp",
-          "choices": {
-            "R1": "Source",
-            "R2": "Middle",
-            "R3": "Amp"
-          },
-          "defaultValue": ""
+          "code": "teamnum",
+          "autoIncrementOnReset": false
         },
         {
           "title": "No Show",
@@ -65,7 +52,7 @@
       ]
     },
     {
-      "name": "Autonomous",
+      "name": "Mission 01",
       "fields": [
         {
           "title": "Moved?",
