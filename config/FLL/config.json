@@ -1,18 +1,19 @@
 {
   "$schema": "../schema.json",
   "title": "QRScout",
-  "page_title": "Crescendo",
+  "page_title": "QRScout FLL",
   "delimiter": "\t",
   "sections": [
     {
       "name": "Prematch",
-      "preserveDataOnReset": true,
+      "preserveDataOnReset": false,
       "fields": [
         {
           "title": "Referee Name",
           "type": "text",
           "required": true,
-          "code": "referee"
+          "code": "referee",
+          "preserveDataOnReset": true
         },
         {
           "title": "Match Number",
@@ -26,102 +27,61 @@
           "title": "Team Initals",
           "type": "text",
           "required": true,
-          "code": "team"
+          "code": "team",
+          "preserveDataOnReset": false
         },
         {
           "title": "Team Number",
           "type": "number",
           "required": true,
           "code": "teamNumber"
-          "autoIncrementOnReset": false
-        },
-        {
-          "title": "Team Number",
-          "type": "number",
-          "required": true,
-          "code": "teamnum",
-          "autoIncrementOnReset": false
+          "autoIncrementOnReset": false,
+          "preserveDataOnReset": false
         },
         {
           "title": "No Show",
           "type": "boolean",
           "defaultValue": false,
           "required": false,
-          "code": "noShow"
+          "code": "noShow",
+          "preserveDataOnReset": false
         }
       ]
     },
     {
-      "name": "Mission 01",
+      "name": "Mission 01: Coral Nursery",
       "fields": [
         {
-          "title": "Moved?",
+          "title": "Hanging",
           "type": "boolean",
           "defaultValue": false,
-          "required": false,
-          "code": "Mved"
+          "required": true,
+          "code": "hanging"
         },
         {
-          "code": "timer",
-          "title": "Timer",
-          "type": "timer",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
+          "code": "inPlace",
+          "title": "In Place",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": true
         },
         {
-          "code": "ausc",
-          "title": "Speaker Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "auskpm",
-          "title": "Speaker Missed",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "a_gp_Path",
-          "title": "Auto Game Piece Path",
-          "type": "select",
-          "multiSelect": true,
-          "choices": {
-            "1": "Speaker 3 (Source Side)",
-            "2": "Speaker 2 (Middle)",
-            "3": "Speaker 1 (Amp Side)",
-            "4": "Midline 5 (Source Edge)",
-            "5": "Midline 4",
-            "6": "Midline 3 (Middle)",
-            "7": "Midline 2",
-            "8": "Midline 1 (Amp Edge)"
-          },
-          "required": false
-        },
-        {
-          "code": "auf",
-          "title": "Auto Foul",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
+          "code": "flipped",
+          "title": "Buds Flipped?",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": true
         }
       ]
     },
     {
-      "name": "Teleop",
+      "name": "Mission 02: Shark",
       "fields": [
         {
-          "code": "tamps",
-          "title": "Amp Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
+          "code": "touchingCave",
+          "title": "Touching Cave?",
+          "type": "boolean",
+          "required": true
         },
         {
           "code": "tsc",
